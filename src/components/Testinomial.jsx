@@ -26,7 +26,7 @@ export const Testimonials = () => {
         <h2 className="text-3xl font-bold mb-8">Testimonials</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 rounded-lg bg-gray-100 dark:bg-gray-800">
+            <div key={index} className="p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                   <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
