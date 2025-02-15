@@ -74,7 +74,6 @@ const App = () => {
                 src={MyProfileImage} // Replace with your image path
                 alt="Aashir Haris"
                 className="w-full h-full object-cover"
-                image-rendering: crisp-edges
               />
             </div>
             <h1 className="text-5xl font-bold">Aashir Haris</h1>
