@@ -68,8 +68,8 @@ const App = () => {
 
       <div className="w-full">
         <Section id="home" setActiveSection={setActiveSection}>
-          <div className="flex flex-col items-center space-y-8">
-            <div className="w-50 h-50 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:scale-110 transition-transform duration-300">
+          <div className="flex flex-col items-center space-y-8 pt-15">
+            <div className="w-70 h-70 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:scale-110 transition-transform duration-300">
               <img
                 src={MyProfileImage} // Replace with your image path
                 alt="Aashir Haris"
