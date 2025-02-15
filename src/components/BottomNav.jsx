@@ -12,7 +12,7 @@ export const BottomNav = ({ activeSection, setActiveSection, theme, isVisible })
     };
   
     return (
-      <nav  className={` 
+      <nav  className={` bottom-nav
         fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50
         px-6 py-2 rounded-full backdrop-blur-md
         ${theme === 'dark' ? 'bg-gray-900/90' : 'bg-white/90'}
