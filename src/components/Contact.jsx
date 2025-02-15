@@ -23,7 +23,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen pt-20 px-4">
+    <section id="contact" className="min-h-50 pt-30 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
         <div className="grid md:grid-cols-2 gap-8">
