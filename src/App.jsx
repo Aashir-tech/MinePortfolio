@@ -119,7 +119,7 @@ const App = () => {
         <Section
           id="contact"
           setActiveSection={setActiveSection}
-          className="sm:min-h-screen h-70"
+          className="sm:min-h-screen h-200"
         >
           <Contact />
         </Section>
@@ -127,7 +127,7 @@ const App = () => {
         <Section
           id="footer"
           setActiveSection={setActiveSection}
-          className="sm:min-h-screen h-150"
+          className="sm:min-h-screen h-0"
         >
           <Footer />
         </Section>
