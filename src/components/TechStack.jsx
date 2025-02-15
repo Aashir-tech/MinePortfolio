@@ -1,6 +1,6 @@
 import React from "react";
-import { FaNodeJs, FaReact, FaHtml5, FaCss3, FaGit } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiJavascript, SiMongodb, SiPrisma, SiTypescript, SiFigma, SiFirebase } from "react-icons/si";
+import { FaNodeJs, FaReact, FaHtml5, FaCss3, FaGit, FaJava } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiJavascript, SiMongodb, SiPrisma, SiTypescript, SiFigma, SiFirebase, SiCplusplus, SiSpringboot, SiExpress } from "react-icons/si";
 
 const techStack = [
   { name: "Next.js", icon: <SiNextdotjs />, color: "text-black" },
@@ -15,6 +15,10 @@ const techStack = [
   { name: "Figma", icon: <SiFigma />, color: "text-pink-500" },
   { name: "Git", icon: <FaGit />, color: "text-red-500" },
   { name: "Firebase", icon: <SiFirebase />, color: "text-yellow-400" },
+  { name: "Java", icon: <FaJava />, color: "text-red-600" },
+  { name: "C++", icon: <SiCplusplus />, color: "text-blue-700" },
+  { name: "Spring Boot", icon: <SiSpringboot />, color: "text-green-700" },
+  { name: "Express.js", icon: <SiExpress />, color: "text-gray-700" },
 ];
 
 const TechStack = () => {

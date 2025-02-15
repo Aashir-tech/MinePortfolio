@@ -1,6 +1,6 @@
 import { useEffect , useRef } from "react";
 
-export const Section = ({ id, children, setActiveSection }) => {
+export const Section = ({ id, children, setActiveSection , className }) => {
     const sectionRef = useRef(null);
   
     useEffect(() => {
@@ -30,7 +30,7 @@ export const Section = ({ id, children, setActiveSection }) => {
       <section
         ref={sectionRef}
         id={id}
-        className="min-h-screen flex flex-col justify-center items-center py-5 snap-start"
+        className={`flex flex-col justify-center items-center py-5 snap-start ${className}`}
       >
         {children}
       </section>

@@ -11,11 +11,10 @@ import { BottomNav } from "./components/BottomNav";
 import { Footer } from "./components/Footer";
 import { Section } from "./components/Section";
 import MyProfileImage from "./assets/MyProfileImage.jpg";
-import TypingEffect from './components/TypingEffect'
+import TypingEffect from "./components/TypingEffect";
 import LocomotiveScroll from "locomotive-scroll";
 import Timeline from "./components/Timeline";
 import TechStack from "./components/TechStack";
-
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -23,10 +22,8 @@ const App = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  
 
   useEffect(() => {
-    
     setIsVisible(true);
 
     const handleScroll = () => {
@@ -67,58 +64,71 @@ const App = () => {
       />
 
       <div className="w-full">
-        <Section id="home" setActiveSection={setActiveSection}>
+        <Section id="home" setActiveSection={setActiveSection} className="min-h-screen">
           <div className="flex flex-col items-center space-y-8">
             <div className="w-50 h-50 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:scale-110 transition-transform duration-300">
               <img
                 src={MyProfileImage} // Replace with your image path
                 alt="Aashir Haris"
                 className="w-full h-full object-cover"
-                image-rendering: crisp-edges
+                image-rendering:crisp-edges
               />
             </div>
             <h1 className="text-5xl font-bold">Aashir Haris</h1>
             <TypingEffect />
             <div className="flex space-x-6">
-              <a href="https://github.com/Aashir-tech"><Github className="w-6 h-6 hover:text-blue-500 cursor-pointer transition-colors" /></a>
+              <a href="https://github.com/Aashir-tech">
+                <Github className="w-6 h-6 hover:text-blue-500 cursor-pointer transition-colors" />
+              </a>
               <a href="https://www.linkedin.com/in/aashir-haris">
-              <Linkedin className="w-6 h-6 hover:text-blue-500 cursor-pointer transition-colors" /></a>
+                <Linkedin className="w-6 h-6 hover:text-blue-500 cursor-pointer transition-colors" />
+              </a>
               <a href="mailto:aashirharis6@gmail.com">
-              <Mail className="w-6 h-6 hover:text-blue-500 cursor-pointer transition-colors" />
+                <Mail className="w-6 h-6 hover:text-blue-500 cursor-pointer transition-colors" />
               </a>
             </div>
           </div>
         </Section>
 
-        <Section id="about" setActiveSection={setActiveSection}>
+        <Section id="about" setActiveSection={setActiveSection} className="min-h-screen">
           <About />
         </Section>
-{/* 
+        {/* 
         <Section id="experience" setActiveSection={setActiveSection}>
           <Experience />
         </Section> */}
-        <Section id='timeline' setActiveSection={setActiveSection} >
+        <Section id="timeline" setActiveSection={setActiveSection} className="min-h-screen">
           <Timeline />
         </Section>
 
-        <Section id='techStack' setActiveSection={setActiveSection}>
+        <Section id="techStack" setActiveSection={setActiveSection} className="min-h-screen">
           <TechStack />
         </Section>
 
-{/* 
+        {/* 
 
         <Section id="services" setActiveSection={setActiveSection}>
           <Services />
         </Section> */}
 
-        <Section id="testimonials" setActiveSection={setActiveSection}>
+        <Section id="testimonials" setActiveSection={setActiveSection}
+        className="min-h-screen">
           <Testimonials />
         </Section>
 
-        <Section id="contact" setActiveSection={setActiveSection}>
+        <Section
+          id="contact"
+          setActiveSection={setActiveSection}
+          className="sm:min-h-screen h-70"
+        >
           <Contact />
         </Section>
-        <Section id="footer" setActiveSection={setActiveSection}>
+
+        <Section
+          id="footer"
+          setActiveSection={setActiveSection}
+          className="sm:min-h-screen h-150"
+        >
           <Footer />
         </Section>
       </div>
