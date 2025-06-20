@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-MyColor : #090A15;
+}
+
 /* Add the fadeIn animation we used */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -17,3 +24,5 @@
 
 
 }
+
+/* https://www.prisma.io/illustrations/home-page/hero.svg */

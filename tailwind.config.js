@@ -9,6 +9,9 @@ export default {
       extend: {
         fontFamily: {
           'myFont': ['"Poppins"'] // Example using "Poppins" font
+        },
+        colors :{
+          'myColor' : "#090A15"
         }
       },
     },
